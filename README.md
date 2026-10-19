@@ -50,7 +50,7 @@ When you're done, a bug shouldn't be able to reach `main` without a red ❌.
 4. Set up Python and run the tests:
    ```bash
    python3 -m venv .venv
-   source .venv/bin/activate          # Windows: .venv\Scripts\activate
+   source .venv/bin/activate
    pip install -r requirements.txt
    pytest
    ```
@@ -185,10 +185,10 @@ A pipeline is only useful if it catches bugs. Time to test it.
    ```
 4. **Swap back** and watch your PR. It re-runs automatically.
 
-| Result   | Meaning                      | What to do                                                                                                        |
-| -------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Result   | Meaning                      | What to do                                                                                                                    |
+| -------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | ❌ Red   | Your pipeline caught the bug | Notice the **Merge** button is blocked 🔒. Click the red ❌ to find which test failed. Fix the bug, push, and get green again |
-| ✅ Green | The bug got past your tests  | Write a new test that catches it, push, and confirm it's red. Then fix the bug, push, and get green               |
+| ✅ Green | The bug got past your tests  | Write a new test that catches it, push, and confirm it's red. Then fix the bug, push, and get green                           |
 
 ---
 
